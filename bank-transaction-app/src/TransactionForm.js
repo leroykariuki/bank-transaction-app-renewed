@@ -15,7 +15,7 @@ const TransactionForm = ({ onAddTransaction, onSearch }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    onAddTransaction(formData); // Call the parent component's function to add the transaction
+    onAddTransaction(formData); 
     setFormData({
       date: '',
       description: '',
@@ -26,7 +26,7 @@ const TransactionForm = ({ onAddTransaction, onSearch }) => {
 
   const handleSearch = (event) => {
     const searchTerm = event.target.value;
-    onSearch(searchTerm); // Call the parent component's function to handle search
+    onSearch(searchTerm); 
   };
 
   return (
